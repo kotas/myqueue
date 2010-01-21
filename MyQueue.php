@@ -85,6 +85,7 @@ class MyQueue
    * Push a message to the end of the queue.
    *
    * @param  string  The data of the message to be pushed.
+   * @return bool    true on success, false on failure.
    */
   public function push($data) {
     $sth = $this->pdo->prepare("
